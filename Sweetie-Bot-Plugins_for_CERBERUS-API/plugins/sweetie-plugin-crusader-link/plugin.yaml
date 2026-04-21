@@ -1,0 +1,18 @@
+name: sweetie-plugin-crusader-link
+version: 2.1.0
+api_version: 1
+display_name: Sweetie Crusader Link
+description: Updated peer-link layer for two Sweetie-Bot GO2 peers with better coordination metadata.
+capabilities:
+  - crusader.register_peer
+  - crusader.update_link
+  - crusader.send_message
+  - crusader.list_peers
+  - crusader.choose_transport
+  - crusader.get_state
+  - crusader.reset
+  - crusader.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

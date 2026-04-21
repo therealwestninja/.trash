@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sweetie Command",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "command_id",
+    "type",
+    "target",
+    "priority",
+    "data"
+  ],
+  "properties": {
+    "command_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "low",
+        "normal",
+        "high",
+        "critical"
+      ]
+    },
+    "data": {
+      "type": "object"
+    }
+  }
+}

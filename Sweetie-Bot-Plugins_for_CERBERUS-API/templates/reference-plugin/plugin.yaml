@@ -1,0 +1,25 @@
+name: sweetie-plugin-reference
+version: 1.0.0
+api_version: 1
+display_name: Sweetie Reference Plugin
+description: Reference implementation for a standardized Sweetie-Bot plugin.
+capabilities:
+  - reference.ping
+entrypoints:
+  execute: /execute
+  health: /health
+  manifest: /manifest
+  status: /status
+port: 7099
+dependencies:
+  required: []
+  optional: []
+produces_state:
+  - reference
+consumes_state: []
+subscribes_to: []
+publishes:
+  - reference.pinged
+safety:
+  critical: false
+  safe_fail: true

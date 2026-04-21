@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-interaction-core/app/routes.py
+# hypothesis_version: 6.151.10
+
+['/execute', '/health', 'event', 'info', 'interaction-core', 'interaction.reset', 'noop', 'ok', 'reset', 'status']

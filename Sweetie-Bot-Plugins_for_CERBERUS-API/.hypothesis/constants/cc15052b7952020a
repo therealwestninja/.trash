@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-cognitive-core/app/routes.py
+# hypothesis_version: 6.151.10
+
+[0.6, 400, '/execute', '/health', '/manifest', '/status', 'attention_score', 'bus_result', 'cognition.get_state', 'cognition.reset', 'cognition.set_state', 'cognition.status', 'evaluation', 'event', 'event.publish', 'interpretation', 'memory.store_episode', 'memory_result', 'metadata', 'ok', 'payload', 'plugin', 'salience', 'source', 'state', 'status', 'suggested_action', 'tags', 'text', 'topic', 'type', 'version']

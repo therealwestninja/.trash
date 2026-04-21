@@ -1,0 +1,20 @@
+name: sweetie-plugin-nav2-pathing
+version: 1.0.0
+api_version: 1
+display_name: Sweetie Nav2 Pathing Plugin
+description: Controller-friendly navigation and waypoint pathing adapter for CERBERUS.
+capabilities:
+  - nav.goal
+  - nav.preview_route
+  - nav.follow_waypoints
+  - nav.cancel
+  - nav.recovery
+  - nav.status
+entrypoints:
+  execute: /execute
+  docs: /docs
+healthcheck: /health
+port: 7000
+compatibility:
+  controller: CERBERUS-UnitreeGo2Companion_Web-Interface
+  backend: CERBERUS-UnitreeGo2CompanionAPI

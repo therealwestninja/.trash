@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-memory-alaya/app/services/memory_store.py
+# hypothesis_version: 6.151.10
+
+[0.0, 0.15, 0.25, 0.45, 1.0, 86400.0, 'created_at', 'derived_from', 'episode', 'episodic_count', 'expires_at', 'fact', 'id', 'memory.consolidate', 'memory_count', 'memory_type', 'metadata', 'retrieval_score', 'salience', 'semantic_count', 'source', 'tags', 'text', 'top_tags', 'updated_at']

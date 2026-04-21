@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-action-registry/app/config.py
+# hypothesis_version: 6.151.10
+
+['1.0.0', 'PLUGIN_NAME', 'PLUGIN_VERSION']

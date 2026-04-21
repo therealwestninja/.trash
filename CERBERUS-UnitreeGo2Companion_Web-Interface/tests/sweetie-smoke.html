@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sweetie Smoke Test</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#111; color:#eee; padding:16px; }
+    .ok { color:#7CFC98; }
+    .fail { color:#FF8A8A; }
+    .warn { color:#FFD27F; }
+    .panel { border:1px solid #444; border-radius:8px; padding:12px; margin:10px 0; }
+    .terrain-chip,.nst { display:inline-block; padding:2px 6px; border:1px solid #555; border-radius:999px; margin:2px; }
+    .tval.ok,.nst.ok { color:#7CFC98; }
+    .tval.warn,.nst.warn { color:#FFD27F; }
+    .tval.err,.nst.err { color:#FF8A8A; }
+  </style>
+</head>
+<body>
+  <h1>Sweetie UI smoke test</h1>
+  <div id="results" class="panel"></div>
+
+  <div id="sweetie-stack-config"></div>
+  <button id="sweetie-save-btn"></button>
+  <button id="sweetie-refresh-btn"></button>
+  <button id="sweetie-follow-btn"></button>
+  <button id="sweetie-patrol-btn"></button>
+  <button id="sweetie-stop-btn"></button>
+  <button id="sweetie-dock-btn"></button>
+  <button id="sweetie-clear-override-btn"></button>
+  <button id="sweetie-peer-ping-btn"></button>
+  <div id="sweetie-plugin-grid"></div>
+  <div id="plugins-list"></div>
+  <div id="sweetie-capability-list"></div>
+  <div id="sweetie-compat-notes"></div>
+  <div id="sweetie-command-summary"></div>
+  <div id="sweetie-command-active"></div>
+  <div id="sweetie-command-history"></div>
+  <div id="sweetie-summary-online"></div>
+  <div id="sweetie-summary-compatible"></div>
+  <div id="sweetie-summary-manifests"></div>
+  <div id="sweetie-summary-controller"></div>
+  <div id="sweetie-surface-execute"></div>
+  <div id="sweetie-surface-state"></div>
+  <div id="sweetie-surface-capabilities"></div>
+  <div id="sweetie-surface-stream"></div>
+  <div id="sweetie-status-autonomy-mode"></div>
+  <div id="sweetie-status-autonomy-goal"></div>
+  <div id="sweetie-status-best-friend"></div>
+  <div id="sweetie-status-social-focus"></div>
+  <div id="sweetie-status-battery"></div>
+  <div id="sweetie-status-dock"></div>
+  <div id="sweetie-status-peer"></div>
+  <div id="sweetie-status-adapters"></div>
+  <div id="sweetie-quick-action-status"></div>
+
+  <script type="module" src="./sweetie-smoke.js"></script>
+</body>
+</html>

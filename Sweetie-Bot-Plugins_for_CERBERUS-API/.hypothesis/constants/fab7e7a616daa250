@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-leg-odometry/app/routes.py
+# hypothesis_version: 6.151.10
+
+['/execute', '/health', 'active', 'dt', 'error', 'odom.get', 'odom.reset', 'odom.status', 'odom.update', 'ok', 'status', 'unknown', 'vx', 'vy', 'yaw_rate']

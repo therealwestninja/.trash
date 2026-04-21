@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mission State",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "current_goal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "goal_stack": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interruptions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "mode": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

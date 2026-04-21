@@ -1,0 +1,17 @@
+name: sweetie-plugin-safety-governor
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Safety Governor
+description: Updated safety governor aware of autonomy modes, social tiers, and squad coordination.
+capabilities:
+  - safety.evaluate_action
+  - safety.set_policy
+  - safety.get_policy
+  - safety.report_context
+  - safety.estop
+  - safety.clear_estop
+  - safety.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

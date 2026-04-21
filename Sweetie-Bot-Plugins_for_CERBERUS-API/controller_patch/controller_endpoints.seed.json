@@ -1,0 +1,15 @@
+{
+  "sweetie": {
+    "event_bus": "http://localhost:7101",
+    "action_registry": "http://localhost:7102",
+    "gait_library": "http://localhost:7103",
+    "social_bonding": "http://localhost:7104",
+    "crusader_link": "http://localhost:7105",
+    "autonomy_supervisor": "http://localhost:7106",
+    "perception_adapter": "http://localhost:7201",
+    "motion_adapter": "http://localhost:7202",
+    "battery_adapter": "http://localhost:7203",
+    "audio_adapter": "http://localhost:7204",
+    "peer_adapter": "http://localhost:7205"
+  }
+}

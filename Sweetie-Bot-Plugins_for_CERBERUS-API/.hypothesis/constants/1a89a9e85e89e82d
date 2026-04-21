@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-cognitive-core/app/config.py
+# hypothesis_version: 6.151.10
+
+['0.8', '1.0.0', 'ACTION_REGISTRY_URL', 'EVENT_BUS_URL', 'MEMORY_URL', 'PLUGIN_NAME', 'PLUGIN_VERSION', 'WORLD_MODEL_URL']

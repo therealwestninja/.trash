@@ -1,0 +1,5 @@
+
+name: sweetie-plugin-audio
+version: 2.1
+capabilities:
+  - audio.execute

@@ -1,0 +1,8 @@
+{
+  "event_bus": "http://localhost:7101",
+  "action_registry": "http://localhost:7102",
+  "gait_library": "http://localhost:7103",
+  "social_bonding": "http://localhost:7104",
+  "crusader_link": "http://localhost:7105",
+  "autonomy_supervisor": "http://localhost:7106"
+}

@@ -1,0 +1,16 @@
+name: sweetie-plugin-learning-loop
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Learning Loop
+description: Updated adaptive learning loop with relationship and autonomy-aware reinforcement.
+capabilities:
+  - learning.record_outcome
+  - learning.adjust_traits
+  - learning.get_profile
+  - learning.get_history
+  - learning.reset
+  - learning.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

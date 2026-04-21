@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-action-registry/app/services/registry.py
+# hypothesis_version: 6.151.10
+
+['action', 'action_count', 'action_name', 'by_handler_type', 'created_at', 'description', 'dispatch_count', 'dispatch_envelope', 'dispatch_type', 'dispatched_at', 'execute_request', 'payload', 'policy', 'recent_dispatches', 'removed', 'tags', 'target_action', 'target_plugin', 'type', 'updated_at']

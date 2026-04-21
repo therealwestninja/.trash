@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Mood State",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "current": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "intensity": {
+      "type": "number"
+    },
+    "energy": {
+      "type": "number"
+    },
+    "affection": {
+      "type": "number"
+    },
+    "last_updated": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+name: sweetie-plugin-cognitive-core
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Cognitive Core
+description: Updated cognition core that leverages attention, bonding, behavior, safety, and autonomy plugins.
+capabilities:
+  - cognition.perceive_event
+  - cognition.evaluate_context
+  - cognition.choose_action
+  - cognition.set_state
+  - cognition.get_state
+  - cognition.reset
+  - cognition.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

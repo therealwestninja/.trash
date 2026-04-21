@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-audio/app/main.py
+# hypothesis_version: 6.151.10
+
+['/execute', '/health', 'data', 'ok', 'plugin', 'status']

@@ -1,0 +1,5 @@
+
+name: sweetie-plugin-input
+version: 2.1
+capabilities:
+  - input.execute

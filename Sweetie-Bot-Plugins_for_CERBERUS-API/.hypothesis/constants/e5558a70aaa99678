@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-event-bus/app/routes.py
+# hypothesis_version: 6.151.10
+
+[400, '/execute', '/health', '/manifest', '/status', 'event.clear', 'event.poll', 'event.publish', 'event.recent', 'event.status', 'event.subscribe', 'event.unsubscribe', 'events', 'limit', 'ok', 'plugin', 'status', 'version']

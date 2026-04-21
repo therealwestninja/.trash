@@ -1,0 +1,16 @@
+name: sweetie-plugin-perception-core
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Perception Core
+description: Updated perception layer with human classification hints and better candidate/event output for newer Sweetie plugins.
+capabilities:
+  - perception.ingest
+  - perception.track_list
+  - perception.track_get
+  - perception.export_attention_candidates
+  - perception.reset
+  - perception.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-interaction-core/app/core.py
+# hypothesis_version: 6.151.10
+
+['action', 'engage_operator', 'follow_operator', 'greet_operator', 'idle', 'idle_scan', 'intent', 'observe', 'observe_person', 'operator', 'payload', 'speech', 'tags', 'topic', 'track_id', 'vision.person']

@@ -1,0 +1,14 @@
+[Unit]
+Description=Sweet Freedom Controller Service
+After=network.target
+
+[Service]
+Type=simple
+User=robot
+WorkingDirectory=/home/robot/cerberus
+ExecStart=/usr/bin/python3 -m controller.app.main_v2
+Restart=always
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

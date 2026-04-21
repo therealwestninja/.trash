@@ -1,0 +1,18 @@
+name: sweetie-plugin-autonomy-supervisor
+version: 2.1.0
+api_version: 1
+display_name: Sweetie Autonomy Supervisor
+description: Updated autonomy supervisor for fully integrated unsupervised Sweetie operation.
+capabilities:
+  - autonomy.report_context
+  - autonomy.evaluate_mode
+  - autonomy.choose_goal
+  - autonomy.approve_transition
+  - autonomy.get_state
+  - autonomy.set_policy
+  - autonomy.reset
+  - autonomy.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

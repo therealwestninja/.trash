@@ -1,0 +1,16 @@
+name: sweetie-plugin-behavior-engine
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Behavior Engine
+description: Updated personality-driven behavior engine with relationship and autonomy-aware expression.
+capabilities:
+  - behavior.process_intent
+  - behavior.generate_style
+  - behavior.set_persona_state
+  - behavior.get_persona_state
+  - behavior.reset
+  - behavior.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

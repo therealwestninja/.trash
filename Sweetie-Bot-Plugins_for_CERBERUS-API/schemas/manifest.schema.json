@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sweetie Plugin Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "version",
+    "api_version",
+    "display_name",
+    "description",
+    "capabilities",
+    "entrypoints"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "api_version": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entrypoints": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "execute",
+        "health",
+        "manifest"
+      ],
+      "properties": {
+        "execute": {
+          "type": "string"
+        },
+        "health": {
+          "type": "string"
+        },
+        "manifest": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "port": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "dependencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "optional": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "produces_state": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "consumes_state": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "subscribes_to": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publishes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "scenario_name": "peer_status_ping",
+  "steps": [
+    {
+      "service": "peer_adapter",
+      "execute": {
+        "type": "adapter.peer.register_peer",
+        "payload": {
+          "peer_id": "cmc-scootaloo",
+          "transport": {
+            "bluetooth": true,
+            "wifi": true,
+            "voice": true
+          }
+        }
+      }
+    },
+    {
+      "service": "peer_adapter",
+      "execute": {
+        "type": "adapter.peer.send",
+        "payload": {
+          "peer_id": "cmc-scootaloo",
+          "message_type": "status_ping",
+          "payload": {
+            "mode": "patrol",
+            "battery": 0.77
+          }
+        }
+      }
+    }
+  ]
+}

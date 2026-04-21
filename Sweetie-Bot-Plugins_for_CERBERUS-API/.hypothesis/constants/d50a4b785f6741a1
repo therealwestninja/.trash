@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-leg-odometry/app/state.py
+# hypothesis_version: 6.151.10
+
+[0.0, 'reset', 'status', 'x', 'y', 'yaw']

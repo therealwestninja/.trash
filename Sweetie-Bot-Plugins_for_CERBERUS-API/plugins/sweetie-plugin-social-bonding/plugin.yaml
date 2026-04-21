@@ -1,0 +1,19 @@
+name: sweetie-plugin-social-bonding
+version: 2.1.0
+api_version: 1
+display_name: Sweetie Social Bonding
+description: Updated relationship modeling for best-friend, supporting humans, public awareness, and squad-aware social context.
+capabilities:
+  - bonding.register_human
+  - bonding.observe_human
+  - bonding.update_relationship
+  - bonding.get_best_friend
+  - bonding.list_humans
+  - bonding.rank_attention
+  - bonding.decay
+  - bonding.reset
+  - bonding.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

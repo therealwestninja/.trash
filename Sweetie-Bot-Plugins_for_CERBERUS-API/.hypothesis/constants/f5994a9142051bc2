@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-action-registry/app/routes.py
+# hypothesis_version: 6.151.10
+
+[400, 404, '/execute', '/health', '/manifest', '/status', 'action.dispatch', 'action.get', 'action.list', 'action.register', 'action.set_policy', 'action.status', 'action.unregister', 'ok', 'plugin', 'registered', 'result', 'results', 'status', 'updated', 'version']

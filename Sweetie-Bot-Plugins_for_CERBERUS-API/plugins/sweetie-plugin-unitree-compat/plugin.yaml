@@ -1,0 +1,17 @@
+name: sweetie-plugin-unitree-compat
+version: 0.1.0
+api_version: 1
+port: 7101
+description: Unitree-compatible motion and posture adapter for CERBERUS.
+capabilities:
+  - robot.command
+  - robot.sequence
+  - robot.posture
+  - robot.motion_preset
+entrypoints:
+  health: /health
+  manifest: /manifest
+  execute: /execute
+env:
+  CERBERUS_API_URL: http://localhost:8000
+  UNITREE_MODE: go2

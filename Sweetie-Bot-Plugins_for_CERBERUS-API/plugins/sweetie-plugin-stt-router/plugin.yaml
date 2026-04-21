@@ -1,0 +1,16 @@
+name: sweetie-plugin-stt-router
+version: 2.0.0
+api_version: 1
+display_name: Sweetie STT Router
+description: Updated STT router with squad, best-friend, and autonomy-aware utterance classification.
+capabilities:
+  - stt.transcribe
+  - stt.process_utterance
+  - stt.list_providers
+  - stt.set_defaults
+  - stt.get_defaults
+  - stt.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

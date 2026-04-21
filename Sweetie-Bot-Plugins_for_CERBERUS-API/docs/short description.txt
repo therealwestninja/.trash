@@ -1,0 +1,3 @@
+Package Title: "Sweetie-Bot_for_CERBERUS-API"
+
+Description: Sweetie Bot is a centralized modular plugin ecosystem repository for the CERBERUS API, a Unitree Go2-based robotic development platform, with the purpose of designing truly autonomous free-roaming Ai characters.

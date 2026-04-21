@@ -1,0 +1,7 @@
+name: sweetie-plugin-leg-odometry
+version: 1.0.0
+capabilities:
+  - odom.update
+  - odom.get
+  - odom.reset
+  - odom.status

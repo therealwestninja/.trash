@@ -1,0 +1,18 @@
+name: sweetie-plugin-memory-alaya
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Memory Alaya
+description: Relationship-aware episodic and semantic memory with richer metadata for the newer Sweetie stack.
+capabilities:
+  - memory.store_episode
+  - memory.store_fact
+  - memory.query
+  - memory.consolidate
+  - memory.get
+  - memory.list
+  - memory.delete
+  - memory.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

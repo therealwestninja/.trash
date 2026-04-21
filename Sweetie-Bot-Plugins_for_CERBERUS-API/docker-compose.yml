@@ -1,0 +1,47 @@
+{
+  "version": "3",
+  "services": {
+    "cerberus-bridge": {
+      "build": "./sweetie-plugin-cerberus-bridge",
+      "ports": [
+        "7001:7000"
+      ]
+    },
+    "character": {
+      "build": "./sweetie-plugin-character",
+      "ports": [
+        "7002:7000"
+      ]
+    },
+    "memory": {
+      "build": "./sweetie-plugin-memory",
+      "ports": [
+        "7003:7000"
+      ]
+    },
+    "autonomy": {
+      "build": "./sweetie-plugin-autonomy",
+      "ports": [
+        "7004:7000"
+      ]
+    },
+    "input": {
+      "build": "./sweetie-plugin-input",
+      "ports": [
+        "7005:7000"
+      ]
+    },
+    "audio": {
+      "build": "./sweetie-plugin-audio",
+      "ports": [
+        "7006:7000"
+      ]
+    },
+    "emotion": {
+      "build": "./sweetie-plugin-emotion",
+      "ports": [
+        "7007:7000"
+      ]
+    }
+  }
+}

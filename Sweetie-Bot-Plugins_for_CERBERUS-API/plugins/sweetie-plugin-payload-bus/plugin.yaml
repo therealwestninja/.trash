@@ -1,0 +1,22 @@
+name: sweetie-plugin-payload-bus
+version: 1.0.0
+api_version: 1
+display_name: Sweetie Payload Bus Plugin
+description: Register, discover, and manage external payload-style modules for CERBERUS.
+capabilities:
+  - payload.register
+  - payload.unregister
+  - payload.heartbeat
+  - payload.get
+  - payload.list
+  - payload.list_by_capability
+  - payload.route_request
+  - payload.status
+entrypoints:
+  execute: /execute
+  docs: /docs
+healthcheck: /health
+port: 7000
+compatibility:
+  controller: CERBERUS-UnitreeGo2Companion_Web-Interface
+  backend: CERBERUS-UnitreeGo2CompanionAPI

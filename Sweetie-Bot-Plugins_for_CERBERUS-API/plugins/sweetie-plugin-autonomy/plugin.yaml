@@ -1,0 +1,5 @@
+
+name: sweetie-plugin-autonomy
+version: 2.1
+capabilities:
+  - autonomy.execute

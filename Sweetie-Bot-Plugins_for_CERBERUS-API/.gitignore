@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+node_modules/
+dist/
+build/
+*.zip
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+.ruff_cache/
+
+# Generated test outputs
+test-results/

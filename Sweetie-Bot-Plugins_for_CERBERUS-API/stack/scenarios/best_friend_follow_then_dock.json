@@ -1,0 +1,32 @@
+{
+  "scenario_name": "best_friend_follow_then_dock",
+  "steps": [
+    {
+      "service": "perception_adapter",
+      "execute": {
+        "type": "adapter.perception.inject_best_friend",
+        "payload": {
+          "human_id": "dev-001",
+          "name": "Developer",
+          "distance_m": 1.2
+        }
+      }
+    },
+    {
+      "service": "battery_adapter",
+      "execute": {
+        "type": "adapter.battery.set_level",
+        "payload": {
+          "level": 0.16
+        }
+      }
+    },
+    {
+      "service": "motion_adapter",
+      "execute": {
+        "type": "adapter.motion.report_state",
+        "payload": {}
+      }
+    }
+  ]
+}

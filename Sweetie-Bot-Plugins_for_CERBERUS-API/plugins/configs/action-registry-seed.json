@@ -1,0 +1,34 @@
+{
+  "actions": [
+    {
+      "action_name": "follow_operator",
+      "description": "Follow the best-friend/operator target.",
+      "handler_type": "plugin_execute",
+      "target_plugin": "runtime-orchestrator",
+      "target_action": "runtime.follow_best_friend",
+      "default_payload": {},
+      "tags": ["follow", "operator", "social"],
+      "policy": {"safety_level": "normal", "relationship_required": "best_friend"}
+    },
+    {
+      "action_name": "seek_dock",
+      "description": "Enter docking cycle.",
+      "handler_type": "plugin_execute",
+      "target_plugin": "runtime-orchestrator",
+      "target_action": "runtime.dock_cycle",
+      "default_payload": {},
+      "tags": ["dock", "battery", "autonomy"],
+      "policy": {"safety_level": "strict"}
+    },
+    {
+      "action_name": "peer_status_ping",
+      "description": "Send status message to a Crusader peer.",
+      "handler_type": "plugin_execute",
+      "target_plugin": "runtime-orchestrator",
+      "target_action": "runtime.peer_status_ping",
+      "default_payload": {},
+      "tags": ["peer", "team", "communication"],
+      "policy": {"safety_level": "normal"}
+    }
+  ]
+}

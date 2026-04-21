@@ -1,0 +1,1037 @@
+{
+  "plugins": [
+    {
+      "name": "sweetie-plugin-action-registry",
+      "path": "plugins/sweetie-plugin-action-registry",
+      "manifest": {
+        "name": "sweetie-plugin-action-registry",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Action Registry Plugin",
+        "description": "Named action registration, dispatch, adapter routing, and execution policy layer for CERBERUS-compatible Sweetie plugins.",
+        "capabilities": [
+          "action.register",
+          "action.unregister",
+          "action.list",
+          "action.get",
+          "action.dispatch",
+          "action.set_policy",
+          "action.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status_route"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "action.dispatch",
+        "action.get",
+        "action.list",
+        "action.register",
+        "action.set_policy",
+        "action.status",
+        "action.unregister"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-audio",
+      "path": "plugins/sweetie-plugin-audio",
+      "manifest": {
+        "name": "sweetie-plugin-audio",
+        "version": 2.1,
+        "capabilities": [
+          "audio.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-autonomy",
+      "path": "plugins/sweetie-plugin-autonomy",
+      "manifest": {
+        "name": "sweetie-plugin-autonomy",
+        "version": 2.1,
+        "capabilities": [
+          "autonomy.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-cerberus-bridge",
+      "path": "plugins/sweetie-plugin-cerberus-bridge",
+      "manifest": {
+        "name": "sweetie-plugin-cerberus-bridge",
+        "version": 2.1,
+        "capabilities": [
+          "cerberus-bridge.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-character",
+      "path": "plugins/sweetie-plugin-character",
+      "manifest": {
+        "name": "sweetie-plugin-character",
+        "version": 2.1,
+        "capabilities": [
+          "character.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-cognitive-core",
+      "path": "plugins/sweetie-plugin-cognitive-core",
+      "manifest": {
+        "name": "sweetie-plugin-cognitive-core",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Cognitive Core",
+        "description": "Event interpretation, attention scoring, goal selection, and action suggestion layer for CERBERUS-compatible Sweetie systems.",
+        "capabilities": [
+          "cognition.perceive_event",
+          "cognition.evaluate_context",
+          "cognition.choose_action",
+          "cognition.set_state",
+          "cognition.get_state",
+          "cognition.reset",
+          "cognition.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "cognition.choose_action",
+        "cognition.evaluate_context",
+        "cognition.get_state",
+        "cognition.perceive_event",
+        "cognition.reset",
+        "cognition.set_state",
+        "cognition.status"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-emotion",
+      "path": "plugins/sweetie-plugin-emotion",
+      "manifest": {
+        "name": "sweetie-plugin-emotion",
+        "version": 2.1,
+        "capabilities": [
+          "emotion.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-event-bus",
+      "path": "plugins/sweetie-plugin-event-bus",
+      "manifest": {
+        "name": "sweetie-plugin-event-bus",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Event Bus Plugin",
+        "description": "Typed event publish/subscribe spine for CERBERUS-compatible Sweetie plugins.",
+        "capabilities": [
+          "event.publish",
+          "event.subscribe",
+          "event.unsubscribe",
+          "event.poll",
+          "event.recent",
+          "event.clear",
+          "event.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status_route"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "event.clear",
+        "event.poll",
+        "event.publish",
+        "event.recent",
+        "event.status",
+        "event.subscribe",
+        "event.unsubscribe"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-gait-library",
+      "path": "plugins/sweetie-plugin-gait-library",
+      "manifest": {
+        "name": "sweetie-plugin-gait-library",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Gait Library Plugin",
+        "description": "Reusable gait profile and movement-style adapter for CERBERUS-compatible quadruped control.",
+        "capabilities": [
+          "gait.list_profiles",
+          "gait.list_gaits",
+          "gait.get_gait",
+          "gait.set_active",
+          "gait.get_active",
+          "gait.adapt_command",
+          "gait.preview_sequence",
+          "gait.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000,
+        "compatibility": {
+          "controller": "CERBERUS-UnitreeGo2Companion_Web-Interface",
+          "backend": "CERBERUS-UnitreeGo2CompanionAPI"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "gait.adapt_command",
+        "gait.get_active",
+        "gait.get_gait",
+        "gait.list_gaits",
+        "gait.list_profiles",
+        "gait.preview_sequence",
+        "gait.set_active",
+        "gait.status"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-input",
+      "path": "plugins/sweetie-plugin-input",
+      "manifest": {
+        "name": "sweetie-plugin-input",
+        "version": 2.1,
+        "capabilities": [
+          "input.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-interaction-core",
+      "path": "plugins/sweetie-plugin-interaction-core",
+      "manifest": {
+        "name": "sweetie-plugin-interaction-core",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Interaction Core",
+        "description": "Human interaction behavior layer (engage, greet, follow, observe, disengage)",
+        "capabilities": [
+          "interaction.process_event",
+          "interaction.decide_engagement",
+          "interaction.suggest_response",
+          "interaction.set_preferences",
+          "interaction.get_state",
+          "interaction.reset"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "interaction.get_state",
+        "interaction.process_event",
+        "interaction.reset"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-leg-odometry",
+      "path": "plugins/sweetie-plugin-leg-odometry",
+      "manifest": {
+        "name": "sweetie-plugin-leg-odometry",
+        "version": "1.0.0",
+        "capabilities": [
+          "odom.update",
+          "odom.get",
+          "odom.reset",
+          "odom.status"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "odom.get",
+        "odom.reset",
+        "odom.status",
+        "odom.update"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-memory",
+      "path": "plugins/sweetie-plugin-memory",
+      "manifest": {
+        "name": "sweetie-plugin-memory",
+        "version": 2.1,
+        "capabilities": [
+          "memory.execute"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": []
+    },
+    {
+      "name": "sweetie-plugin-memory-alaya",
+      "path": "plugins/sweetie-plugin-memory-alaya",
+      "manifest": {
+        "name": "sweetie-plugin-memory-alaya",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Memory Alaya Plugin",
+        "description": "Episodic and semantic memory plugin with salience, decay, consolidation, and hybrid retrieval for CERBERUS-compatible Sweetie systems.",
+        "capabilities": [
+          "memory.store_episode",
+          "memory.store_fact",
+          "memory.query",
+          "memory.consolidate",
+          "memory.get",
+          "memory.list",
+          "memory.delete",
+          "memory.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "memory.consolidate",
+        "memory.delete",
+        "memory.get",
+        "memory.list",
+        "memory.query",
+        "memory.status",
+        "memory.store_episode",
+        "memory.store_fact"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-mission-bt",
+      "path": "plugins/sweetie-plugin-mission-bt",
+      "manifest": {
+        "name": "sweetie-plugin-mission-bt",
+        "version": "1.0.0",
+        "capabilities": [
+          "mission.start",
+          "mission.tick",
+          "mission.stop",
+          "mission.status"
+        ]
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "mission.start",
+        "mission.status",
+        "mission.stop",
+        "mission.tick"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-nav2-pathing",
+      "path": "plugins/sweetie-plugin-nav2-pathing",
+      "manifest": {
+        "name": "sweetie-plugin-nav2-pathing",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Nav2 Pathing Plugin",
+        "description": "Controller-friendly navigation and waypoint pathing adapter for CERBERUS.",
+        "capabilities": [
+          "nav.goal",
+          "nav.preview_route",
+          "nav.follow_waypoints",
+          "nav.cancel",
+          "nav.recovery",
+          "nav.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000,
+        "compatibility": {
+          "controller": "CERBERUS-UnitreeGo2Companion_Web-Interface",
+          "backend": "CERBERUS-UnitreeGo2CompanionAPI"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "nav.cancel",
+        "nav.follow_waypoints",
+        "nav.goal",
+        "nav.preview_route",
+        "nav.recovery",
+        "nav.status"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-payload-bus",
+      "path": "plugins/sweetie-plugin-payload-bus",
+      "manifest": {
+        "name": "sweetie-plugin-payload-bus",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Payload Bus Plugin",
+        "description": "Register, discover, and manage external payload-style modules for CERBERUS.",
+        "capabilities": [
+          "payload.register",
+          "payload.unregister",
+          "payload.heartbeat",
+          "payload.get",
+          "payload.list",
+          "payload.list_by_capability",
+          "payload.route_request",
+          "payload.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000,
+        "compatibility": {
+          "controller": "CERBERUS-UnitreeGo2Companion_Web-Interface",
+          "backend": "CERBERUS-UnitreeGo2CompanionAPI"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "payload.get",
+        "payload.heartbeat",
+        "payload.list",
+        "payload.list_by_capability",
+        "payload.register",
+        "payload.route_request",
+        "payload.status",
+        "payload.unregister"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-perception-core",
+      "path": "plugins/sweetie-plugin-perception-core",
+      "manifest": {
+        "name": "sweetie-plugin-perception-core",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Perception Core",
+        "description": "Vision/event ingestion, tracking, and emission of standardized perception events for Sweetie-Bot.",
+        "capabilities": [
+          "perception.ingest",
+          "perception.track_list",
+          "perception.track_get",
+          "perception.reset",
+          "perception.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "perception.ingest",
+        "perception.reset",
+        "perception.status",
+        "perception.track_get",
+        "perception.track_list"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-runtime-orchestrator",
+      "path": "plugins/sweetie-plugin-runtime-orchestrator",
+      "manifest": {
+        "name": "sweetie-plugin-runtime-orchestrator",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Runtime Orchestrator Plugin",
+        "description": "Cross-plugin chaining and orchestration layer for CERBERUS-compatible Sweetie plugins.",
+        "capabilities": [
+          "runtime.register_routes",
+          "runtime.chain_execute",
+          "runtime.follow_object",
+          "runtime.patrol_mission",
+          "runtime.simulate_chain",
+          "runtime.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000,
+        "compatibility": {
+          "controller": "CERBERUS-UnitreeGo2Companion_Web-Interface",
+          "backend": "CERBERUS-UnitreeGo2CompanionAPI"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "runtime.chain_execute",
+        "runtime.follow_object",
+        "runtime.patrol_mission",
+        "runtime.register_routes",
+        "runtime.simulate_chain",
+        "runtime.status"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-safety-governor",
+      "path": "plugins/sweetie-plugin-safety-governor",
+      "manifest": {
+        "name": "sweetie-plugin-safety-governor",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Safety Governor",
+        "description": "Safety policy, action constraint, and approval layer for CERBERUS-compatible Sweetie systems.",
+        "capabilities": [
+          "safety.evaluate_action",
+          "safety.set_policy",
+          "safety.get_policy",
+          "safety.report_context",
+          "safety.estop",
+          "safety.clear_estop",
+          "safety.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status_route"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "safety.clear_estop",
+        "safety.estop",
+        "safety.evaluate_action",
+        "safety.get_policy",
+        "safety.report_context",
+        "safety.set_policy",
+        "safety.status"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-sim-learn",
+      "path": "plugins/sweetie-plugin-sim-learn",
+      "manifest": {
+        "name": "sweetie-plugin-sim-learn",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie Simulation and Learning Plugin",
+        "description": "Simulation logging, replay, dataset capture, and lightweight training hooks for CERBERUS-compatible plugins.",
+        "capabilities": [
+          "sim.episode_start",
+          "sim.step",
+          "sim.episode_end",
+          "sim.replay_create",
+          "sim.replay_get",
+          "sim.dataset_list",
+          "sim.dataset_export",
+          "sim.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000,
+        "compatibility": {
+          "controller": "CERBERUS-UnitreeGo2Companion_Web-Interface",
+          "backend": "CERBERUS-UnitreeGo2CompanionAPI"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "sim.dataset_export",
+        "sim.dataset_list",
+        "sim.episode_end",
+        "sim.episode_start",
+        "sim.replay_create",
+        "sim.replay_get",
+        "sim.status",
+        "sim.step"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-unitree-compat",
+      "path": "plugins/sweetie-plugin-unitree-compat",
+      "manifest": {
+        "name": "sweetie-plugin-unitree-compat",
+        "version": "0.1.0",
+        "api_version": 1,
+        "port": 7101,
+        "description": "Unitree-compatible motion and posture adapter for CERBERUS.",
+        "capabilities": [
+          "robot.command",
+          "robot.sequence",
+          "robot.posture",
+          "robot.motion_preset"
+        ],
+        "entrypoints": {
+          "health": "/health",
+          "manifest": "/manifest",
+          "execute": "/execute"
+        },
+        "env": {
+          "CERBERUS_API_URL": "http://localhost:8000",
+          "UNITREE_MODE": "go2"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "POST",
+          "path": "/translate",
+          "handler": "translate"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "robot.command",
+        "robot.motion_preset",
+        "robot.posture",
+        "robot.sequence"
+      ]
+    },
+    {
+      "name": "sweetie-plugin-world-model",
+      "path": "plugins/sweetie-plugin-world-model",
+      "manifest": {
+        "name": "sweetie-plugin-world-model",
+        "version": "1.0.0",
+        "api_version": 1,
+        "display_name": "Sweetie World Model Plugin",
+        "description": "Shared object and environment memory for CERBERUS-compatible plugins.",
+        "capabilities": [
+          "world.upsert_object",
+          "world.get_object",
+          "world.list_objects",
+          "world.delete_object",
+          "world.clear",
+          "world.observe",
+          "world.query_near",
+          "world.status"
+        ],
+        "entrypoints": {
+          "execute": "/execute",
+          "docs": "/docs"
+        },
+        "healthcheck": "/health",
+        "port": 7000,
+        "compatibility": {
+          "controller": "CERBERUS-UnitreeGo2Companion_Web-Interface",
+          "backend": "CERBERUS-UnitreeGo2CompanionAPI"
+        }
+      },
+      "routes": [
+        {
+          "method": "POST",
+          "path": "/execute",
+          "handler": "execute"
+        },
+        {
+          "method": "GET",
+          "path": "/health",
+          "handler": "health"
+        },
+        {
+          "method": "GET",
+          "path": "/manifest",
+          "handler": "manifest"
+        },
+        {
+          "method": "GET",
+          "path": "/status",
+          "handler": "status"
+        }
+      ],
+      "execute_actions_seen_in_code": [
+        "world.clear",
+        "world.delete_object",
+        "world.get_object",
+        "world.list_objects",
+        "world.observe",
+        "world.query_near",
+        "world.status",
+        "world.upsert_object"
+      ]
+    }
+  ]
+}

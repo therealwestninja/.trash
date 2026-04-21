@@ -1,0 +1,68 @@
+version: "3.9"
+
+services:
+  sweetie-plugin-event-bus:
+    image: python:3.11-slim
+    command: ["python","-m","http.server","7000"]
+    working_dir: /app
+    volumes:
+      - ../reference_services/http_stub:/app
+
+  sweetie-plugin-action-registry:
+    image: python:3.11-slim
+    command: ["python","-m","http.server","7000"]
+    working_dir: /app
+    volumes:
+      - ../reference_services/http_stub:/app
+
+  sweetie-plugin-gait-library:
+    image: python:3.11-slim
+    command: ["python","-m","http.server","7000"]
+    working_dir: /app
+    volumes:
+      - ../reference_services/http_stub:/app
+
+  sweetie-plugin-social-bonding:
+    image: python:3.11-slim
+    command: ["python","-m","http.server","7000"]
+    working_dir: /app
+    volumes:
+      - ../reference_services/http_stub:/app
+
+  sweetie-plugin-crusader-link:
+    image: python:3.11-slim
+    command: ["python","-m","http.server","7000"]
+    working_dir: /app
+    volumes:
+      - ../reference_services/http_stub:/app
+
+  sweetie-plugin-autonomy-supervisor:
+    image: python:3.11-slim
+    command: ["python","-m","http.server","7000"]
+    working_dir: /app
+    volumes:
+      - ../reference_services/http_stub:/app
+
+  sweetie-adapter-perception:
+    build: ../adapters/sweetie-adapter-perception
+    ports: ["7201:7000"]
+
+  sweetie-adapter-motion:
+    build: ../adapters/sweetie-adapter-motion
+    environment:
+      CERBERUS_API_BASE_URL: ${CERBERUS_API_BASE_URL}
+    ports: ["7202:7000"]
+
+  sweetie-adapter-battery:
+    build: ../adapters/sweetie-adapter-battery
+    environment:
+      CERBERUS_API_BASE_URL: ${CERBERUS_API_BASE_URL}
+    ports: ["7203:7000"]
+
+  sweetie-adapter-audio:
+    build: ../adapters/sweetie-adapter-audio
+    ports: ["7204:7000"]
+
+  sweetie-adapter-peer-transport:
+    build: ../adapters/sweetie-adapter-peer-transport
+    ports: ["7205:7000"]

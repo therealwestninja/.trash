@@ -1,0 +1,5 @@
+
+name: sweetie-plugin-memory
+version: 2.1
+capabilities:
+  - memory.execute

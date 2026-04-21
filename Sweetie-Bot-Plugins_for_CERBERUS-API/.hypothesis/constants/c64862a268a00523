@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-event-bus/app/services/bus.py
+# hypothesis_version: 6.151.10
+
+['*', 'cleared_queues', 'cleared_subscribers', 'created_at', 'delivered_to', 'event', 'event_id', 'events', 'payload', 'published_count', 'queue_count', 'recent_event_count', 'remaining', 'removed', 'source', 'subscriber_count', 'subscriber_id', 'subscribers', 'tags', 'topic', 'topics']

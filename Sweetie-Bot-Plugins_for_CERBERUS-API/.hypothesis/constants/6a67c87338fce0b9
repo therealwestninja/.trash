@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-event-bus/app/config.py
+# hypothesis_version: 6.151.10
+
+['1.0.0', '200', 'MAX_RECENT_EVENTS', 'PLUGIN_NAME', 'PLUGIN_VERSION']

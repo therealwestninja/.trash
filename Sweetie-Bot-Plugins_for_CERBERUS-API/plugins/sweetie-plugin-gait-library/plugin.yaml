@@ -1,0 +1,18 @@
+name: sweetie-plugin-gait-library
+version: 2.1.0
+api_version: 1
+display_name: Sweetie Gait Library
+description: Updated gait library with persona, autonomy, and docking-aware movement styling.
+capabilities:
+  - gait.list_profiles
+  - gait.list_gaits
+  - gait.get_gait
+  - gait.set_active
+  - gait.get_active
+  - gait.adapt_command
+  - gait.preview_sequence
+  - gait.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

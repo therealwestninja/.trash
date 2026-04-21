@@ -1,0 +1,22 @@
+name: sweetie-plugin-world-model
+version: 1.0.0
+api_version: 1
+display_name: Sweetie World Model Plugin
+description: Shared object and environment memory for CERBERUS-compatible plugins.
+capabilities:
+  - world.upsert_object
+  - world.get_object
+  - world.list_objects
+  - world.delete_object
+  - world.clear
+  - world.observe
+  - world.query_near
+  - world.status
+entrypoints:
+  execute: /execute
+  docs: /docs
+healthcheck: /health
+port: 7000
+compatibility:
+  controller: CERBERUS-UnitreeGo2Companion_Web-Interface
+  backend: CERBERUS-UnitreeGo2CompanionAPI

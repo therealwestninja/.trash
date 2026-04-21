@@ -1,0 +1,4 @@
+# file: /mnt/data/repo/plugins/sweetie-plugin-memory-alaya/app/routes.py
+# hypothesis_version: 6.151.10
+
+[400, 404, '/execute', '/health', '/manifest', '/status', 'created', 'deleted', 'episode', 'fact', 'id', 'memory', 'memory.consolidate', 'memory.delete', 'memory.get', 'memory.list', 'memory.query', 'memory.status', 'memory.store_episode', 'memory.store_fact', 'ok', 'plugin', 'results', 'status', 'version']

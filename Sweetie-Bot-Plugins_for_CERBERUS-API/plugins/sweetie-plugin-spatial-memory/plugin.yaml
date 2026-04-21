@@ -1,0 +1,18 @@
+name: sweetie-plugin-spatial-memory
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Spatial Memory
+description: Updated spatial memory with trusted locations and knowledge export for newer plugins.
+capabilities:
+  - spatial.remember_location
+  - spatial.get_location
+  - spatial.list_locations
+  - spatial.update_position
+  - spatial.get_nearby
+  - spatial.export_knowledge
+  - spatial.reset
+  - spatial.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

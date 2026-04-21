@@ -1,0 +1,22 @@
+name: sweetie-plugin-sim-learn
+version: 1.0.0
+api_version: 1
+display_name: Sweetie Simulation and Learning Plugin
+description: Simulation logging, replay, dataset capture, and lightweight training hooks for CERBERUS-compatible plugins.
+capabilities:
+  - sim.episode_start
+  - sim.step
+  - sim.episode_end
+  - sim.replay_create
+  - sim.replay_get
+  - sim.dataset_list
+  - sim.dataset_export
+  - sim.status
+entrypoints:
+  execute: /execute
+  docs: /docs
+healthcheck: /health
+port: 7000
+compatibility:
+  controller: CERBERUS-UnitreeGo2Companion_Web-Interface
+  backend: CERBERUS-UnitreeGo2CompanionAPI

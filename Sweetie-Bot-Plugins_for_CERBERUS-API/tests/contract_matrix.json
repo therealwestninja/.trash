@@ -1,0 +1,13 @@
+{
+  "required_contracts": [
+    "/health",
+    "/execute"
+  ],
+  "services": [
+    "sweetie-adapter-perception",
+    "sweetie-adapter-motion",
+    "sweetie-adapter-battery",
+    "sweetie-adapter-audio",
+    "sweetie-adapter-peer-transport"
+  ]
+}

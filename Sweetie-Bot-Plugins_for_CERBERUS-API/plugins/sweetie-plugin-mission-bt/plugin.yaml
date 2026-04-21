@@ -1,0 +1,7 @@
+name: sweetie-plugin-mission-bt
+version: 1.0.0
+capabilities:
+  - mission.start
+  - mission.tick
+  - mission.stop
+  - mission.status

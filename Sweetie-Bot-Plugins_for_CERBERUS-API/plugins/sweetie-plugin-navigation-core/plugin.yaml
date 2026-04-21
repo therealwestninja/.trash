@@ -1,0 +1,17 @@
+name: sweetie-plugin-navigation-core
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Navigation Core
+description: Updated navigation core with patrol/docking/autonomy-friendly route metadata.
+capabilities:
+  - navigation.set_position
+  - navigation.plan_to_point
+  - navigation.plan_to_location
+  - navigation.follow_route
+  - navigation.cancel_route
+  - navigation.get_route
+  - navigation.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000

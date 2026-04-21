@@ -1,0 +1,18 @@
+name: sweetie-plugin-memory-consolidator
+version: 2.0.0
+api_version: 1
+display_name: Sweetie Memory Consolidator
+description: Updated long-term knowledge consolidator aware of social tiers, autonomy patterns, and peer/squad patterns.
+capabilities:
+  - consolidator.ingest_episode
+  - consolidator.ingest_location
+  - consolidator.ingest_behavior_outcome
+  - consolidator.consolidate
+  - consolidator.get_knowledge
+  - consolidator.get_profile
+  - consolidator.reset
+  - consolidator.status
+entrypoints:
+  execute: /execute
+healthcheck: /health
+port: 7000
