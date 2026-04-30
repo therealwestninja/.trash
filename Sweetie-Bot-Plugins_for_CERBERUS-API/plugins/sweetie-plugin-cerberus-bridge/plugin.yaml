@@ -1,5 +1,0 @@
-
-name: sweetie-plugin-cerberus-bridge
-version: 2.1
-capabilities:
-  - cerberus-bridge.execute
